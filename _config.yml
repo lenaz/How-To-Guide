@@ -23,7 +23,7 @@ github_username: lenaz
 
 # Build settings
 markdown: redcarpet
-theme: minima
+theme: agency
 gems:
   - jekyll-feed
 exclude:
