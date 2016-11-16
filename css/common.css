@@ -16,6 +16,10 @@ body {
     margin: 10px;
 }
 
+a:active {
+    color: #edeff1;
+}
+
 .main-header {
     margin: 0 auto;
     text-align: center;
@@ -52,7 +56,7 @@ body {
 }
 
 .nav li a:active {
-    text-decoration: underline;
+    text-decoration: none;
     color: #edeff1;
 }
 
