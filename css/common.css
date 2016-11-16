@@ -22,8 +22,7 @@ body {
 .nav {
     margin: 0px;
     padding: 5px;
-    color: #FFF;
-    background-color: #959DA6;
+    background-color: #D5D8DC;
     list-style-type: none;
 
 }
@@ -36,7 +35,7 @@ body {
 
 .nav li a {
     text-decoration: none;
-    color: #212F3D;
+    color: #FFF;
     display: block;
     padding: 0px;
 }
