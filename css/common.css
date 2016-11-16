@@ -40,7 +40,7 @@ body {
     padding: 0px;
 }
 
-a:active {
+.nav a:active {
     text-decoration: underline;
 }
 
