@@ -44,11 +44,11 @@ body {
     color: #FFF;
     display: block;
     padding: 0px;
-    transition: .3s background-color;
+    transition: .3s color;
 }
 
 .nav li:hover {
-    background-color: #005f5f;
+    color: #e4e7ea;
 }
 
 .nav li a:active {
