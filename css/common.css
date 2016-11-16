@@ -43,6 +43,8 @@ body {
 
 .nav li a:active {
     text-decoration: underline;
+    background: white;
+    border: solid 1px black;
 }
 
 .nav li a:hover {
