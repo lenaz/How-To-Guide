@@ -44,7 +44,7 @@ body {
     color: #FFF;
     display: block;
     padding: 0px;
-    transition: .3s color;
+    transition: .2s color;
 }
 
 .nav li:hover {
@@ -56,7 +56,7 @@ body {
 }
 
 .nav li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: #e4e7ea;
 }
 
