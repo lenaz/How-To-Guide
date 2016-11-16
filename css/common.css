@@ -36,6 +36,7 @@ body {
 
 .nav li a {
     text-decoration: none;
+    color: #212F3D;
     display: block;
     padding: 0px;
 }
