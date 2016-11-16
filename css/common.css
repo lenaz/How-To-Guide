@@ -1,6 +1,6 @@
 html {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     
     font: normal 100%/1.4 Georgia, serif;
 }
@@ -14,8 +14,9 @@ body {
 }
 
 .nav {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 30;
+    color: #212F3D;
     background-color: #F8F9F9;
     list-style-type: none;
 
