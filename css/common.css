@@ -40,6 +40,10 @@ body {
     padding: 0px;
 }
 
+.nav li:hover {
+    border: 1.5px solid white;
+}
+
 .nav li a:active {
     text-decoration: underline;
     background: white;
