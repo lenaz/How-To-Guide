@@ -40,15 +40,11 @@ body {
     padding: 0px;
 }
 
-.nav a:active {
+.nav li a:active {
     text-decoration: underline;
 }
 
 .nav li a:hover {
-    text-decoration: underline;
-}
-
-.nav li a:active {
     text-decoration: underline;
 }
 
