@@ -46,9 +46,10 @@ body {
 
 .nav li a:hover {
     text-decoration: underline;
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+}
+
+.nav li a:active {
+    text-decoration: underline;
 }
 
 .nav-top {
