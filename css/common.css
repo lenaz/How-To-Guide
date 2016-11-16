@@ -35,6 +35,11 @@ body {
 
 .nav li a {
     text-decoration: none;
+    display: block;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 .nav-top {
