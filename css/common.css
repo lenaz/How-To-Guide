@@ -55,7 +55,7 @@ a:active {
     color: #e4e7ea;
 }
 
-.nav li a:active {
+.nav li a:visited {
     text-decoration: none;
     color: #edeff1;
 }
