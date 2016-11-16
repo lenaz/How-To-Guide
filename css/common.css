@@ -5,6 +5,10 @@ html {
     font: normal 100%/1.4 Georgia, serif;
 }
 
+body {
+    color: #212F3D;
+}
+
 .current {
     text-decoration: underline;
 }
@@ -12,8 +16,9 @@ html {
 .nav {
     margin: 0;
     padding: 0;
-
+    background-color: #F8F9F9;
     list-style-type: none;
+
 }
 
 .nav > li {
@@ -26,4 +31,6 @@ html {
 
 .definitions {
     border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
 }
