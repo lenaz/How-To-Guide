@@ -1,0 +1,8 @@
+<nav>
+    <ul class="nav {{include.navclass}}">
+	<li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+	<li><a href="{{site.baseurl}}/api.html" class="{% if page.url == '/api.html' %}current{% endif %}">API</a></li>
+	<li><a href="{{site.baseurl}}/getting-started.html" class="{% if page.url == '/getting-started.html' %}current{% endif %}">Getting Started</a></li>
+	<li><a href="{{site.baseurl}}/ibm-watson.html" class="{% if page.url == '/ibm-watson.html' %}current{% endif %}">IBM Watson</a></li>
+    </ul>
+</nav>
