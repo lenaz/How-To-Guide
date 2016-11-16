@@ -23,3 +23,7 @@ html {
 .nav-top {
     font-size: 1.25rem;
 }
+
+.definitions {
+    border: 1px solid black;
+}
