@@ -1,3 +1,9 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
 html {
     margin: 0 auto;
     padding: 0px;
@@ -38,10 +44,11 @@ body {
     color: #FFF;
     display: block;
     padding: 0px;
+    transition: .3s background-color;
 }
 
 .nav li:hover {
-    border: 1.5px solid white;
+    background-color: #005f5f;
 }
 
 .nav li a:active {
