@@ -53,6 +53,7 @@ body {
 
 .nav li a:active {
     text-decoration: underline;
+    color: #edeff1;
 }
 
 .nav li a:hover {
