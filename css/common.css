@@ -1,6 +1,6 @@
 html {
-    margin: 10px;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 0px;
     
     font: normal 100%/1.4 Georgia, serif;
 }
@@ -21,7 +21,7 @@ body {
 
 .nav {
     margin: 0 auto;
-    padding: 10px;
+    padding: 0px;
     color: #212F3D;
     background-color: #F8F9F9;
     list-style-type: none;
@@ -30,13 +30,14 @@ body {
 
 .nav > li {
     display: inline-block;
-    padding: 10px;
+    padding: 0px;
     text-decoration: none;
 }
 
 .nav li a {
     text-decoration: none;
     display: block;
+    padding: 25px;
 }
 
 a:active {
