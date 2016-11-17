@@ -15,6 +15,11 @@ body {
     text-align: center;
 }
 
+.footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .current {
     text-decoration: underline;
 }
@@ -54,6 +59,10 @@ body {
 
 .nav-top {
     font-size: 1.25rem;
+}
+
+.nav-bottom {
+    font-size: 1rem;
 }
 
 .definitions {
