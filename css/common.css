@@ -20,6 +20,11 @@ a:active {
     color: #edeff1;
 }
 
+.nav li a:hover {
+    text-decoration: none;
+    color: #edeff1;
+}
+
 .main-header {
     margin: 0 auto;
     text-align: center;
@@ -53,11 +58,6 @@ a:active {
 
 .nav li:hover {
     color: #e4e7ea;
-}
-
-.nav li:active {
-    text-decoration: none;
-    color: #edeff1;
 }
 
 .nav li a:hover {
