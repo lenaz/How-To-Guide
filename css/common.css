@@ -75,3 +75,8 @@ body {
     margin: 0 auto;
     padding: 10px;
 }
+
+.get-started-img {
+    height: auto;
+    width: 50%;
+}
