@@ -75,6 +75,7 @@ body {
     border: 1.5px solid #212F3D;
     margin: 0 auto;
     padding: 10px;
+    max-width: 100%;
     background-color: #FCFCFC;
 }
 
@@ -82,7 +83,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     display: block;
-    width: 65%;
+    max-width: 100%;
     background-color: #FCFCFC;
     border: solid .5px #212F3D;
 }
@@ -90,6 +91,7 @@ body {
 .get-started-img {
     height: auto;
     width: 75%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -97,6 +99,7 @@ body {
 .json-body-img {
     height: auto;
     width: 80%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -104,6 +107,7 @@ body {
 .demo-image {
     height: auto;
     width: 65%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
 }
