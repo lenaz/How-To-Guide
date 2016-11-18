@@ -77,7 +77,7 @@ body {
 }
 
 .url-div {
-    border: 3px solid #212F3D;
+    border: 3px groove #212F3D;
     margin: 0 auto;
     padding: 10px;
 }
