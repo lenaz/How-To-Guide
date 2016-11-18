@@ -27,22 +27,22 @@ layout: default
 <ul>
 
 <li><strong>https://watson-api-explorer.mybluemix.net:</strong> this is the protocol and hostname of the API URL</li>
-
+<br>
 <li><strong>/alchemy-api:</strong> this is the specific API we want to access</li>
-
+<br>
 <li><strong>/calls:</strong> every time we want to access a set of data/information from an application, we have to call the API</li>
-
+<br>
 <li><strong>/url:</strong> we must specify where we will be retrieving sentiment information from (a webpage, HTML document, or plain text) by appending either url, html, or text after /calls/. In our example, we will be analyzing an article at a particular URL, so we will append /url/ to /calls/</li>
-
+<br>
 <li><strong>/URLGetTextSentiment:</strong> In order to construct an API call, we must first decide which API Endpoint we want. An endpoint is the URL where your service can be accessed by the client application. Our operation consists of analyzing the sentiment of an article at a given URL. Befittingly, the endpoint for our API call is called URLGetTextSentiment. The URLGetTextSentiment call is utilized to extract positive/negative sentiment from a given web page. AlchemyLanguage will download the requested URL, extracting text from the HTML document structure (ignoring navigation links, advertisements, and other undesirable content), and perform sentiment extraction operations.
-
+<br>
 <p>Immediately after the endpoint URL, we append a query string containing relevant parameters:</p>
 
 <li><strong>?apikey= #######################################:</strong> our API key</li>
-
+<br>
 <li><strong>&amp;url= http%3A%2F%2Fwww.theatlantic.com%2Fmagazine%2Farchive%2F2016%2F11%2Fthe-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F:</strong> the URL of the source content to be analyzed.
 
-  <h3>Aside</h3>
+  <h3><i>Aside:</i></h3>
 <p>You may be wondering what %3A and %2F mean. URLs can only be sent over the Internet using the ASCII character-set. Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format. URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. In this case, the colon and slashes in the original link http://www.theatlantic.com/magazine/archive/2016/11/the-case-for-hillary-clinton-and-against-donald-trump/501161/ were replaced by a %3A and %2F’s, respectively. This encoding ensures that the URL can be used in the preparation of data with a Content-Type of application/x-www-form-urlencoded, as is often used in the submission of HTML form data in HTTP requests.</p>
 </li>
 </ul>
@@ -60,11 +60,11 @@ layout: default
 <ul>
 
   <li><strong>outputMode:</strong> xml or json (default)</li>
-
+<br>
   <li><strong>showSourceText:</strong> set this to 1 to include the source text in the response</li>
-
+<br>
   <li><strong>cquery:</strong> a visual constraints query to apply to the web page</li>
-
+<br>
   <li><strong>sourceText:</strong> how to obtain the source text from the webpage. Learn more about possible values here: https://www.alchemyapi.com/api/web-api-1</li>
 
 </ul>
