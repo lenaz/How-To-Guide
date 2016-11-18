@@ -21,7 +21,7 @@ layout: default
 <li><strong>language:</strong> Detected language of the source text (text with fewer than 15 characters is assumed to be English)</li>
 <br>
 <li><strong>docSentiment:</strong> Object containing document-level sentiment information. It includes the following key-value pairs:</li>
-  <br>
+<br>
 <ul>
 <li><strong>mixed:</strong> 1 indicates that the sentiment is both positive and negative</li>
 <br>
@@ -29,6 +29,7 @@ layout: default
 <br>
 <li><strong>type:</strong> Sentiment polarity: positive, negative, or neutral</li>
 </ul>
+  </ul>
   <br>
 
 <h3>Error Handling</h3>
@@ -45,19 +46,14 @@ layout: default
 </ul>
 <br>
   
-  <h2>Sentiment Analysis</h2>
-    <p>Based off the docSentiment information we got back in our response, we observe that:
-    <ul>
-    <li>The article's sentiment is mixed</li>
-      <li>The article has a slightly negative sentiment strength</li>
-      <li>The overall sentiment polarity is negative</li> 
-  </ul>
-  <br>
-  <p>These results make sense, considering it is an article criticizing Donald Trump. Such politically-heated content biased against a public figure will unsurprisingly contain negative sentiment.</p>
-  <p> On the following Demo page, you can conduct your own Sentiment Analysis by inputting a piece of text. While the results may seem unintuitive at times, it may simply reflect the fact that technology has not yet grasped all the nuances of human language.
-  For instance, if I enter "I'm crazy about that book!", the docSentiment score and type come back as negative. Clearly, the results do not reflect the emotional nuance of the term "crazy" in this context. Watson assumed the standard dictionary definition of "crazy": mentally deranged, especially as manifested in a wild or aggressive way. 
-Moreover, if I input "I feel blue", the docSentiment type comes back as neutral, rather than negative. While, it may take a while before Watson can pick up on language nuances like tone, sarcasm, and metaphors, its current natural language processing capabilities
-are quite impressive!
-  </p>
-  </p>
+<h2>Sentiment Analysis</h2>
+<p>Based off the docSentiment information we got back in our response, we observe that:
+<ul>
+<li>The article's sentiment is mixed</li>
+<li>The article has a slightly negative sentiment strength</li>
+<li>The overall sentiment polarity is negative</li> 
+</ul>
+<br>
+<p>These results make sense, considering it is an article criticizing Donald Trump. Such politically-heated content biased against a public figure will unsurprisingly contain negative sentiment.</p>
+<p> On the following Demo page, you can conduct your own Sentiment Analysis by inputting a piece of text. While the results may seem unintuitive at times, it may simply reflect the fact that technology has not yet grasped all the nuances of human language. For instance, if I enter "I'm crazy about that book!", the docSentiment score and type come back as negative. Clearly, the results do not reflect the emotional nuance of the term "crazy" in this context. Watson assumed the standard dictionary definition of "crazy": mentally deranged, especially as manifested in a wild or aggressive way. Moreover, if I input "I feel blue", the docSentiment type comes back as neutral, rather than negative. While, it may take a while before Watson can pick up on language nuances like tone, sarcasm, and metaphors, its current natural language processing capabilities are quite impressive!</p>
 </div>
