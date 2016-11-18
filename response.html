@@ -12,31 +12,31 @@ layout: default
 
 <h2>Response Components</h2>
 <ul>
-<li><strong>status: </strong> OK or ERROR - indicates whether the request was successful.</li>
+<li><strong>status:</strong> OK or ERROR - indicates whether the request was successful.</li>
 <br>
-<li><strong>url: </strong>HTTP URL that was passed in the input.</li>
+<li><strong>url:</strong>HTTP URL that was passed in the input.</li>
 <br>
-<li><strong>language: </strong>Detected language of the source text (text with fewer than 15 characters is assumed to be English)</li>
+<li><strong>language:</strong>Detected language of the source text (text with fewer than 15 characters is assumed to be English)</li>
 <br>
-<li><strong>docSentiment: </strong>Object containing document-level sentiment information. It includes the following key-value pairs:</li>
+<li><strong>docSentiment:</strong>Object containing document-level sentiment information. It includes the following key-value pairs:</li>
 <ul>
-<li><strong>mixed: </strong>1 indicates that the sentiment is both positive and negative</li>
+<li><strong>mixed:</strong>1 indicates that the sentiment is both positive and negative</li>
 <br>
-<li><strong>score: </strong> Sentiment strength (0.0 == neutral)</li>
+<li><strong>score:</strong> Sentiment strength (0.0 == neutral)</li>
 <br>
-<li><strong>type: </strong> Sentiment polarity: positive, negative, or neutral</li>
+<li><strong>type:</strong> Sentiment polarity: positive, negative, or neutral</li>
 </ul>
 
 <h3>Error Handling</h3>
 <p>When an error occurs, the status attribute of the response will read ERROR, and the statusInfo attribute will contain a string that describes the error.</p>
 <h3>Possible Errors Values</h3>
 <ul>
-<li><strong>invalid-api-key: </strong>Value of the  API key parameter is invalid</li>
+<li><strong>invalid-api-key:</strong>Value of the  API key parameter is invalid</li>
 <br>
-<li><strong>cannot-retrieve: </strong> Cannot retrieve the webpage. Contains additional information depending on the reason.</li>
+<li><strong>cannot-retrieve:</strong> Cannot retrieve the webpage. Contains additional information depending on the reason.</li>
 <br>
-<li><strong>page-is-not-html: </strong> Input content is not HTML.</li>
+<li><strong>page-is-not-html:</strong> Input content is not HTML.</li>
 <br>
-<li><strong>unsupported-text-language: </strong> The method you are using does not support the language of the source text. If the detected language isn't correct (it usually is for text > 100 characters), you can manually specify the language in the language query parameter.</li>
+<li><strong>unsupported-text-language:</strong> The method you are using does not support the language of the source text. If the detected language isn't correct (it usually is for text > 100 characters), you can manually specify the language in the language query parameter.</li>
 </ul>
 </div>
