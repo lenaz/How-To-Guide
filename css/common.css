@@ -82,6 +82,7 @@ body {
     margin: 30 auto;
     padding: 30px;
     background-color: #FCFCFC;
+    border: solid .5px #212F3D;
 }
 
 .get-started-img {
