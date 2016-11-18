@@ -11,19 +11,14 @@ layout: default
 <div class="definitions">
 
 <h2>Response Components</h2>
-
 <ul>
 <li><strong>status: </strong> OK or ERROR - indicates whether the request was successful.</li>
 <br>
-
 <li><strong>url: </strong>HTTP URL that was passed in the input.</li>
 <br>
-
 <li><strong>language: </strong>Detected language of the source text (text with fewer than 15 characters is assumed to be English)</li>
 <br>
-
 <li><strong>docSentiment: </strong>Object containing document-level sentiment information. It includes the following key-value pairs:</li>
-
 <ul>
 <li><strong>mixed: </strong>1 indicates that the sentiment is both positive and negative</li>
 <br>
@@ -41,6 +36,7 @@ layout: default
 <li><strong>cannot-retrieve: </strong> Cannot retrieve the webpage. Contains additional information depending on the reason.</li>
 <br>
 <li><strong>page-is-not-html: </strong> Input content is not HTML.</li>
+<br>
 <li><strong>unsupported-text-language: </strong> The method you are using does not support the language of the source text. If the detected language isn't correct (it usually is for text > 100 characters), you can manually specify the language in the language query parameter.</li>
-  </ul>
-  </div>
+</ul>
+</div>
