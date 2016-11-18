@@ -36,7 +36,9 @@ layout: default
 <br>
 <li><strong>/URLGetTextSentiment:</strong> In order to construct an API call, we must first decide which API Endpoint we want. An endpoint is the URL where your service can be accessed by the client application. Our operation consists of analyzing the sentiment of an article at a given URL. Befittingly, the endpoint for our API call is called URLGetTextSentiment. The URLGetTextSentiment call is utilized to extract positive/negative sentiment from a given web page. AlchemyLanguage will download the requested URL, extracting text from the HTML document structure (ignoring navigation links, advertisements, and other undesirable content), and perform sentiment extraction operations.
 <br>
+<br>
 <p>Immediately after the endpoint URL, we append a query string containing relevant parameters:</p>
+<br>
 
 <li><strong>?apikey= #######################################:</strong> our API key</li>
 <br>
@@ -46,7 +48,7 @@ layout: default
 <p>You may be wondering what %3A and %2F mean. URLs can only be sent over the Internet using the ASCII character-set. Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format. URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. In this case, the colon and slashes in the original link http://www.theatlantic.com/magazine/archive/2016/11/the-case-for-hillary-clinton-and-against-donald-trump/501161/ were replaced by a %3A and %2F’s, respectively. This encoding ensures that the URL can be used in the preparation of data with a Content-Type of application/x-www-form-urlencoded, as is often used in the submission of HTML form data in HTTP requests.</p>
 </li>
 </ul>
-
+<br>
 <p>Now that we have our source URL and API key in the query string, we have all the required parameters necessary to send a valid GET request.</p>
 
 <p>But wait. What about <strong>&amp;outputMode=json</strong> and <strong>&amp;showSourceText=1</strong> ? </p>
