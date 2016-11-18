@@ -26,13 +26,13 @@ layout: default
   
 <ul>
 
-<li><strong>https://watson-api-explorer.mybluemix.net:</strong> this is the protocol and hostname of the API URL</li>
+<li><strong>https://watson-api-explorer.mybluemix.net:</strong> this is the protocol and hostname of the API URL.</li>
 <br>
-<li><strong>/alchemy-api:</strong> this is the name of the specific API we want to access</li>
+<li><strong>/alchemy-api:</strong> this is the name of the specific API we want to access.</li>
 <br>
 <li><strong>/calls:</strong> every time we want to access data from an application, we make calls to the API. After /calls, we specify the source of that data.</li>
 <br>
-<li><strong>/url:</strong> we must specify the source of the sentiment information we will be analyzing (a webpage, HTML document, or plain text) by appending either url, html, or text after /calls/. In our example, we will be analyzing an article at a particular URL, so we will append /url to /calls</li>
+<li><strong>/url:</strong> we must specify the source of the sentiment information we will be analyzing (a webpage, HTML document, or plain text) by appending either url, html, or text after /calls/. In our example, we will be analyzing an article at a particular URL, so we will append /url to /calls.</li>
 <br>
 <li><strong>/URLGetTextSentiment:</strong> In order to construct an API call, we must first decide which API Endpoint we want. An endpoint is the URL where your service can be accessed by the client application. Our operation consists of analyzing the sentiment of an article at a given URL. Befittingly, the endpoint for our API call is called URLGetTextSentiment. The URLGetTextSentiment call is utilized to extract positive/negative sentiment from a given web page. AlchemyLanguage will download the requested URL, extracting text from the HTML document structure (ignoring navigation links, advertisements, and other undesirable content), and perform sentiment extraction operations.
 <br>
@@ -61,9 +61,9 @@ layout: default
 
   <li><strong>outputMode:</strong> xml or json (default)</li>
 <br>
-  <li><strong>showSourceText:</strong> set this to 1 to include the source text in the response</li>
+  <li><strong>showSourceText:</strong> set this to 1 to include the source text in the response.</li>
 <br>
-  <li><strong>cquery:</strong> a visual constraints query to apply to the web page</li>
+  <li><strong>cquery:</strong> a visual constraints query to apply to the web page.</li>
 <br>
   <li><strong>sourceText:</strong> how to obtain the source text from the webpage. Learn more about possible values here: https://www.alchemyapi.com/api/web-api-1</li>
 
