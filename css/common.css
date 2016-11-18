@@ -82,7 +82,7 @@ body {
 .url-div {
     margin: 0 auto;
     padding: 20px;
-    display: block;
+    display: inline-block;
     max-width: 100%;
     background-color: #FCFCFC;
     border: solid .5px #212F3D;
