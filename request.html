@@ -18,7 +18,7 @@ layout: default
 
   </div>
   
-<p>Pretty unhelpful, right? While the URL may look like gibberish, it’s actually packed with meaningful information we need to make calls to the API.</p>
+<p>Pretty intimidating, right? While the URL may look like esoteric gibberish, it’s actually packed with meaningful information we can use to make calls to the API.</p>
  
 <p>Let’s break it down into its individual components:</p>
 
@@ -28,18 +28,16 @@ layout: default
 
 <li><strong>https://watson-api-explorer.mybluemix.net:</strong> this is the protocol and hostname of the API URL</li>
 <br>
-<li><strong>/alchemy-api:</strong> this is the specific API we want to access</li>
+<li><strong>/alchemy-api:</strong> this is the name of the specific API we want to access</li>
 <br>
-<li><strong>/calls:</strong> every time we want to access a set of data/information from an application, we have to call the API</li>
+<li><strong>/calls:</strong> every time we want to access data from an application, we make calls to the API. After /calls, we specify the source of that data.</li>
 <br>
-<li><strong>/url:</strong> we must specify where we will be retrieving sentiment information from (a webpage, HTML document, or plain text) by appending either url, html, or text after /calls/. In our example, we will be analyzing an article at a particular URL, so we will append /url/ to /calls/</li>
+<li><strong>/url:</strong> we must specify the source of the sentiment information we will be analyzing (a webpage, HTML document, or plain text) by appending either url, html, or text after /calls/. In our example, we will be analyzing an article at a particular URL, so we will append /url to /calls</li>
 <br>
 <li><strong>/URLGetTextSentiment:</strong> In order to construct an API call, we must first decide which API Endpoint we want. An endpoint is the URL where your service can be accessed by the client application. Our operation consists of analyzing the sentiment of an article at a given URL. Befittingly, the endpoint for our API call is called URLGetTextSentiment. The URLGetTextSentiment call is utilized to extract positive/negative sentiment from a given web page. AlchemyLanguage will download the requested URL, extracting text from the HTML document structure (ignoring navigation links, advertisements, and other undesirable content), and perform sentiment extraction operations.
 <br>
 <br>
 <p>Immediately after the endpoint URL, we append a query string containing relevant parameters:</p>
-<br>
-
 <li><strong>?apikey= #######################################:</strong> our API key</li>
 <br>
 <li><strong>&amp;url= http%3A%2F%2Fwww.theatlantic.com%2Fmagazine%2Farchive%2F2016%2F11%2Fthe-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F:</strong> 
