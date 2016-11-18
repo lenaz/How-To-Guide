@@ -9,6 +9,10 @@ layout: default
 <p>In this guide, we will look at how to analyze the sentiment of a webpage.</p>
 <p>In order to start making API calls, we need to decide <i>how</i> to call the API. API calls are made via the HTTP methods GET, POST, PUT, DELETE, AND HEAD. In our case, we will use the GET method, since our objective is to simply retrieve data without directly modifying it.</p>
 
+<div class="request-div">
+
+  <h2>Example GET Request</h2>
+  
 <p>An example GET request looks like this (replace #’s with API key):</p>
 
 <p>https://watson-api-explorer.mybluemix.net/alchemy-api/calls/url/URLGetTextSentiment?apikey=#######################################&amp;url=http%3A%2F%2Fwww.theatlantic.com%2Fmagazine%2Farchive%2F2016%2F11%2Fthe-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F&amp;outputMode=json&amp;showSourceText=1</p>
@@ -17,21 +21,21 @@ layout: default
 
 <ul>
 
-<li>https://watson-api-explorer.mybluemix.net : this is the protocol and hostname of the API URL</li>
+<li><strong>https://watson-api-explorer.mybluemix.net:</strong> this is the protocol and hostname of the API URL</li>
 
-<li>/alchemy-api : this is the specific API we want to access</li>
+<li><strong>/alchemy-api:</strong> this is the specific API we want to access</li>
 
-<li>/calls : every time we want to access a set of data/information from an application, we have to call the API</li>
+<li><strong>/calls:</strong> every time we want to access a set of data/information from an application, we have to call the API</li>
 
-<li>/url : we must specify where we will be retrieving sentiment information from (a webpage, HTML document, or plain text) by appending either url, html, or text after /calls/. In our example, we will be analyzing an article at a particular URL, so we will append /url/ to /calls/</li>
+<li><strong>/url:</strong> we must specify where we will be retrieving sentiment information from (a webpage, HTML document, or plain text) by appending either url, html, or text after /calls/. In our example, we will be analyzing an article at a particular URL, so we will append /url/ to /calls/</li>
 
-<li>/URLGetTextSentiment : In order to construct an API call, we must first decide which API Endpoint we want. An endpoint is the URL where your service can be accessed by the client application. Our operation consists of analyzing the sentiment of an article at a given URL. Befittingly, the endpoint for our API call is called URLGetTextSentiment. The URLGetTextSentiment call is utilized to extract positive/negative sentiment from a given web page. AlchemyLanguage will download the requested URL, extracting text from the HTML document structure (ignoring navigation links, advertisements, and other undesirable content), and perform sentiment extraction operations.
+<li><strong>/URLGetTextSentiment:</strong> In order to construct an API call, we must first decide which API Endpoint we want. An endpoint is the URL where your service can be accessed by the client application. Our operation consists of analyzing the sentiment of an article at a given URL. Befittingly, the endpoint for our API call is called URLGetTextSentiment. The URLGetTextSentiment call is utilized to extract positive/negative sentiment from a given web page. AlchemyLanguage will download the requested URL, extracting text from the HTML document structure (ignoring navigation links, advertisements, and other undesirable content), and perform sentiment extraction operations.
 
 <p>Immediately after the endpoint URL, we append a query string containing relevant parameters:</p>
 
-<li>?apikey= ####################################### : our API key</li>
+<li><strong>?apikey= #######################################:</strong> our API key</li>
 
-<li>&amp;url= http%3A%2F%2Fwww.theatlantic.com%2Fmagazine%2Farchive%2F2016%2F11%2Fthe-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F : the URL of the source content to be analyzed.
+<li><strong>&amp;url= http%3A%2F%2Fwww.theatlantic.com%2Fmagazine%2Farchive%2F2016%2F11%2Fthe-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F:</strong> the URL of the source content to be analyzed.
 
 <p>Aside: You may be wondering what %3A and %2F mean. URLs can only be sent over the Internet using the ASCII character-set. Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format. URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. In this case, the colon and slashes in the original link http://www.theatlantic.com/magazine/archive/2016/11/the-case-for-hillary-clinton-and-against-donald-trump/501161/ were replaced by a %3A and %2F’s, respectively. This encoding ensures that the URL can be used in the preparation of data with a Content-Type of application/x-www-form-urlencoded, as is often used in the submission of HTML form data in HTTP requests.</p>
 </li>
@@ -47,16 +51,17 @@ layout: default
 
 <ul>
 
-<li>outputMode: xml or json (default)</li>
+  <li><strong>outputMode:</strong> xml or json (default)</li>
 
-<li>showSourceText: set this to 1 to include the source text in the response</li>
+  <li><strong>showSourceText:</strong> set this to 1 to include the source text in the response</li>
 
-<li>cquery: a visual constraints query to apply to the web page</li>
+  <li><strong>cquery:</strong> a visual constraints query to apply to the web page</li>
 
-<li>sourceText: how to obtain the source text from the webpage. Learn more about possible values here: https://www.alchemyapi.com/api/web-api-1</li>
+  <li><strong>sourceText:</strong> how to obtain the source text from the webpage. Learn more about possible values here: https://www.alchemyapi.com/api/web-api-1</li>
 
 </ul>
 
 
-<p>In our example GET request, we have &amp;outputMode=json&amp;showSourceText=1. Based off the information on the optional parameters, we now know that we will be receiving a response in JSON format and the source text will be in included in the response.</p>
+<p>In our example GET request, we have <strong>&amp;outputMode=json</strong> and <strong>&amp;showSourceText=1</strong>. Based off the information on the optional parameters, we now know that we will be receiving a response in JSON format and the source text will be in included in the response.</p>
 
+</div>
