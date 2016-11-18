@@ -15,7 +15,7 @@ layout: default
   
   <div>
 
-<p>https://watson-api-explorer.mybluemix.net/alchemy-api/calls/url/URLGetTextSentiment?apikey=#&amp;url=http%3A%2F%2Fwww.theatlantic.com<br>%2Fmagazine%2Farchive%2F2016%2F11%2F
+<p>https://watson-api-explorer.mybluemix.net/alchemy-api/calls/url/URLGetTextSentiment?apikey=#&amp;url=http%3A%2F%2Fwww.theatlantic.com%2Fmagazine%2Farchive%2F2016%2F11%2F
   <br>the-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F&amp;outputMode=json&amp;showSourceText=0</p>
 
   </div>
@@ -43,7 +43,7 @@ layout: default
 <p>Immediately after the endpoint URL, we append a query string containing relevant parameters:</p>
 <li><strong>?apikey=#:</strong> your API key</li>
 <br>
-<li><strong>&amp;url= http%3A%2F%2Fwww.theatlantic.com%2Fmagazine<br>%2Farchive%2F2016%2F11%2F<br>the-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F:</strong> 
+<li><strong>&amp;url= http%3A%2F%2Fwww.theatlantic.com%2Fmagazine%2Farchive%2F2016%2F11%2Fthe-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F:</strong> 
   <p>the URL of the <a href="http://www.theatlantic.com/magazine/archive/2016/11/the-case-for-hillary-clinton-and-against-donald-trump/501161/" target="_blank">source content</a> to be analyzed.</p>
 
 <p>You may be wondering what %3A and %2F mean. URLs can only be sent over the Internet using the ASCII character-set. Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format. URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. In this case, the colon and slashes in the original link http://www.theatlantic.com/magazine/archive/2016/11/the-case-for-hillary-clinton-and-against-donald-trump/501161/ were replaced by a %3A and %2F’s, respectively. This encoding ensures that the URL can be used in the preparation of data with a Content-Type of application/x-www-form-urlencoded, as is often used in the submission of HTML form data in HTTP requests.</p>
