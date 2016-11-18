@@ -8,6 +8,7 @@ html {
 body {
     color: #212F3D;
     margin: 40px;
+    background-color: #f0f0f5
 }
 
 .main-header {
@@ -74,11 +75,13 @@ body {
     border: 1.5px solid #212F3D;
     margin: 0 auto;
     padding: 10px;
+    background-color: #fff;
 }
 
 .url-div {
     margin: 30 auto;
     padding: 30px;
+    background-color: #fff;
 }
 
 .get-started-img {
