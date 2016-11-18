@@ -95,3 +95,10 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+.image1 {
+    height: auto;
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
