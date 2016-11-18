@@ -14,7 +14,7 @@ layout: default
   
   <div class="url-div">
 
-<p>https://watson-api-explorer.mybluemix.net/alchemy-api/calls/url/URLGetTextSentiment?apikey=#######################################&amp;url=http%3A%2F%2Fwww.theatlantic.com%2Fmagazine%2Farchive%2F2016%2F11%2Fthe-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F&amp;outputMode=json&amp;showSourceText=1</p>
+<p>https://watson-api-explorer.mybluemix.net/alchemy-api/calls/url/URLGetTextSentiment?apikey=#######################################&amp;url=http%3A%2F%2Fwww.theatlantic.com%2Fmagazine%2Farchive%2F2016%2F11%2Fthe-case-for-hillary-clinton-and-against-donald-trump%2F501161%2F&amp;outputMode=json&amp;showSourceText=0</p>
 
   </div>
   
@@ -49,7 +49,7 @@ layout: default
 <br>
 <p>Now that we have our source URL and API key in the query string, we have all the required parameters necessary to send a valid GET request.</p>
 
-<p>But wait. What about <strong>&amp;outputMode=json</strong> and <strong>&amp;showSourceText=1</strong> ? </p>
+<p>But wait. What about <strong>&amp;outputMode=json</strong> and <strong>&amp;showSourceText=0</strong> ? </p>
 
 <p>These are optional parameters. Optional parameters can be appended to our GET request, allowing us to further customize what data gets accessed and how. In order to use any of these parameters, we simply add the parameter key-value pair to the GET request as such: &amp;key=value</p>
 
@@ -70,6 +70,6 @@ layout: default
 </ul>
 
 
-<p>In our example GET request, we have <strong>&amp;outputMode=json</strong> and <strong>&amp;showSourceText=1</strong>. Based off the information on the optional parameters, we now know that we will be receiving a response in JSON format and the source text will be in included in the response.</p>
+<p>In our example GET request, we have <strong>&amp;outputMode=json</strong> and <strong>&amp;showSourceText=0</strong>. Based off the information on the optional parameters, we now know that we will be receiving a response in JSON format and the source text will not be in included in the response.</p>
 
 </div>
