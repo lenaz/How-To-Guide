@@ -80,7 +80,8 @@ body {
 
 .url-div {
     margin: 0 auto;
-    padding: 0;
+    padding: 30;
+    display: block;
     width: 65%;
     background-color: #FCFCFC;
     border: solid .5px #212F3D;
