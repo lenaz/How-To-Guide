@@ -30,10 +30,20 @@ layout: default
 <li><strong>type:</strong> Sentiment polarity: positive, negative, or neutral</li>
 </ul>
   <br>
+  
+  <p>Based off the docSentiment information we got back in our response, we see that:
+    <ul>
+    <li>The article's sentiment is mixed</li>
+      <li>The article has a slightly negative sentiment strength</li>
+      <li>The overall sentiment polarity is negative</li> 
+  </ul>
+  These results makes sense, considering it is an article criticizing Donald Trump. Such politically-heated content biased against a public figure will unsurprisingly contain negative sentiment.
+  </p>
 
 <h3>Error Handling</h3>
-<p>When an error occurs, the status attribute of the response will read ERROR, and the statusInfo attribute will contain a string that describes the error.</p>
+<p>Thankfully, our status came back as OK. However, when an does error occur, the status attribute of the response will read ERROR, and the statusInfo attribute will contain a string that describes the error.</p>
 <h3>Possible Errors Values</h3>
+  <p>Possible error values include:</p>
 <ul>
 <li><strong>invalid-api-key:</strong> Value of the  API key parameter is invalid</li>
 <br>
