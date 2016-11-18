@@ -83,7 +83,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     display: inline-block;
-    max-width: 100%;
+    max-width: 80%;
     background-color: #FCFCFC;
     border: solid .5px #212F3D;
 }
